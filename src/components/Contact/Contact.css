@@ -1,0 +1,46 @@
+.contact {
+  flex-direction: column;
+}
+
+.contact__description {
+  margin: 1em 0 2em;
+  color: var(--clr-fg-alt);
+  font-size: 1.1rem;
+}
+
+.contact__methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__methods .btn {
+  min-width: 150px;
+  transition: transform 0.2s ease;
+}
+
+.contact__methods .btn:hover {
+  transform: translateY(-3px);
+}
+
+.contact__discord {
+  cursor: default;
+}
+
+.contact__discord .btn {
+  background: var(--clr-bg-alt);
+  cursor: text;
+}
+
+@media (max-width: 600px) {
+  .contact__methods {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .contact__methods .btn {
+    width: 100%;
+  }
+}
